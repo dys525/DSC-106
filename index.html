@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Report for Dingus & Widget Company</title>
+           
+    </head>
+    <body>
+        <header>
+            <h1><img src='images/dw-logo.png' alt='logo' style="height:50px;width:100px;">Global Dashboard</h1>
+        </header>
+
+        <main>
+            <section>
+                <div class='items'>
+                    <h3>Dingus</h3>
+                    <h3 class='Value'>0</h3>
+                </div>
+
+                <div class='items'>
+                    <h3>Widget</h3>
+                    <h3 class='Value'>0</h3>
+                </div>
+
+                <div class='items'>
+                    <h3>Sales</h3>
+                    <h3 class='Value'>0</h3>
+                </div>
+            </section>
+
+            <hr/>
+            
+            <div class='charts'>
+                <div id='chart-1'>
+                    <figure>
+                        <figcaption>Total Sales Breakdown</figcaption>
+                        <img src='images/pie.png' alt='pie' width='350' height='300'>
+                    </figure>
+                </div>
+                <div id='chart-2'>
+                    <figure>
+                        <figcaption>Sales Per Month</figcaption>
+                        <img src='images/line.png' alt='line' width='350' height='300'>
+                    </figure>
+                </div>
+                <div id='chart-3'>
+                    <iframe src="https://app.zingsoft.com/demos/view/BZV3ARI9"
+                    style="height:700px;width:700px;">
+                    </iframe>
+                    <br />
+                    <a href="https://app.zingsoft.com/demos/view/BZV3ARI9">Source</a>
+                </div>
+            </div>
+            
+            <hr/>
+
+            <table>
+                <caption>Order History</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">ID#</th>
+                        <th rowspan="2">Date</th>
+                        <th colspan="2">Quantity</th>
+                        <th rowspan="2">Total</th>
+                        <th rowspan="2">Payment</th>
+                    </tr>
+                    <tr>
+                        <th>Dingus</th>
+                        <th>Widget</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>12/12/19</td>
+                        <td>4</td>
+                        <td>10</td>
+                        <td>$174.90</td>
+                        <td>Paypal</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>12/21/19</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>$38.23</td>
+                        <td>Visa</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1/5/20</td>
+                        <td>14</td>
+                        <td>19</td>
+                        <td>$436.31</td>
+                        <td>Visa</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">@ 2020 D&W Worldwide.</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br/>
+            <details>
+                <summary onclick="showDialog()">Order Form</summary>
+                    
+                <hr>
+                <form>
+                    <fieldset>
+                        <label>Dingus</label><input type='text' value='0'>
+                        <label>@</label><input type='text'  value="16.25">
+                        <label>= $</label><input type='text' value="0.00">
+                        <br/>
+                        <label>Widget</label><input type='text' value="0">
+                        <label>@</label><input type='text' value="10.99">
+                        <label>= $</label><input type='text' value="0.00">
+                        <br/>
+                        <label>Total $</label><input type='text' value="0.00">
+                        <br />
+                        <label>Payment</label>
+                        <select>
+                            <option>Visa</option>
+                            <option>MasterCard</option>
+                            <option>Paypal</option>
+                        </select>
+                        <br /><br />
+                        <label>Shipping</label><input list="shipping">
+                        <datalist id="shipping">
+                            <option value="Standard: FREE"></option>
+                            <option value="2 Business Day: $10"></option>
+                            <option value="USPS Priority: $5"></option>
+                        </datalist>
+                        <br /><br />
+                        <label>Comment</label><textarea></textarea>
+                        <br /><br />
+                        <input type="button" value="Cancel">
+                        <input type="button" value="Order">
+                    </fieldset>
+
+                </form>
+            </details>
+            
+            <br/>
+            <footer>
+                <p>Disclaimer: This page is provided <em>as is</em></p>
+                <p>Notes</p>
+                <ul>
+                    <li>Your order will leave warehouse in 3-5 days</li>
+                    <li>If you have any question please contact us at 123456789</li>
+                    <li>D&W is a proud supporter of the <em>Stuart Collection</em></li>
+                </ul>
+                <address><i>9500 Gilman Dr, La Jolla, CA 92093</i></address>
+            </footer>
+        </main>
+    </body>
+</html>
